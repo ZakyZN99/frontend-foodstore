@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
+  const [fullName, setfullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -23,8 +24,19 @@ const Register = () => {
         onSubmit={handleSubmit}
       >
         <h1 className=" text-lg pb-8 align-middle text-center font-semibold">
-          Login
+          Registration
         </h1>
+        <div className="mb-3">
+          <h2 className="pb-2">Nama Lengkap:</h2>
+          <input
+            type="text"
+            id="fullName"
+            value={fullName}
+            onChange={(e) => setfullName(e.target.value)}
+            placeholder="Enter your name!"
+            className=" text-black w-100 h-8 items-center pl-2 rounded-md"
+          />
+        </div>
         <div className="mb-3">
           <h2 className="pb-2">Email:</h2>
           <input
@@ -32,11 +44,11 @@ const Register = () => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email address!"
+            placeholder="Enter your email!"
             className=" text-black w-100 h-8 items-center pl-2 rounded-md"
           />
         </div>
-        <div className="mb-2">
+        <div className="mb-4">
           <h2 className="pb-2">Password:</h2>
           <div className="relative">
             <input
@@ -56,14 +68,8 @@ const Register = () => {
             </button>
           </div>
         </div>
-        <div className="mb-4 pl-80">
-          <div className="flex justify-center items-center gap-2">
-            <h5>Don`t have an account?</h5>
-            <a href="#">Register</a>
-          </div>
-        </div>
 
-        <button className="border-1 sm-full sm:w-36 h-8 ">Login</button>
+        <button className="border-1 sm-full sm:w-36 h-8 ">Register</button>
       </form>
     </div>
   );
