@@ -38,7 +38,7 @@ export const AddNewAddress = () => {
                   <div className="pt-2 flex flex-col w-[50%]">
                     <label>Provinsi</label>
                     <Dropdown className="pb-3">
-                      <DropdownToggle className=" w-full text-left">
+                    <DropdownToggle className=" w-full flex justify-between items-center  ">
                         Pilih lokasi...
                       </DropdownToggle>
                       <DropdownMenu>
@@ -48,7 +48,7 @@ export const AddNewAddress = () => {
 
                     <label>Kabupaten</label>
                     <Dropdown className="pb-3">
-                    <DropdownToggle className=" w-full text-left">
+                    <DropdownToggle className=" w-full flex justify-between items-center  ">
                         Pilih lokasi...
                       </DropdownToggle>
                       <DropdownMenu>
@@ -58,7 +58,7 @@ export const AddNewAddress = () => {
 
                     <label>Kecamatan</label>
                     <Dropdown className="pb-3">
-                    <DropdownToggle className=" w-full text-left">
+                    <DropdownToggle className=" w-full flex justify-between items-center  ">
                         Pilih lokasi...
                       </DropdownToggle>
                       <DropdownMenu>
@@ -68,7 +68,7 @@ export const AddNewAddress = () => {
 
                     <label>Kelurahan</label>
                     <Dropdown className="pb-3">
-                    <DropdownToggle className=" w-full text-left">
+                    <DropdownToggle className=" w-full flex justify-between items-center  ">
                         Pilih lokasi...
                       </DropdownToggle>
                       <DropdownMenu>
