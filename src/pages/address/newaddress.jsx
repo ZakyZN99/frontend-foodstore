@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Dropdown, DropdownMenu, DropdownToggle } from "react-bootstrap";
 
 export const AddNewAddress = () => {
   const [email, setEmail] = useState("")
@@ -26,9 +27,58 @@ export const AddNewAddress = () => {
             <div className="border-1 p-2 w-[80%]">
               <form>
                 <h1 className="text-center pb-3 border-b-2">New Address</h1>
-                <div className="pt-2">
-                 
+                <div className="flex gap-4">
+                  <div className="pt-2 flex flex-col  w-[50%]">
+                    <label >Nama</label>
+                    <input></input>
+
+                    <label>Detail address</label>
+                    <input className="h-[230px]"></input>
+                  </div>
+                  <div className="pt-2 flex flex-col w-[50%]">
+                    <label>Provinsi</label>
+                    <Dropdown className="pb-3">
+                      <DropdownToggle className=" w-full text-left">
+                        Pilih lokasi...
+                      </DropdownToggle>
+                      <DropdownMenu>
+
+                      </DropdownMenu>
+                    </Dropdown>
+
+                    <label>Kabupaten</label>
+                    <Dropdown className="pb-3">
+                    <DropdownToggle className=" w-full text-left">
+                        Pilih lokasi...
+                      </DropdownToggle>
+                      <DropdownMenu>
+
+                      </DropdownMenu>
+                    </Dropdown>
+
+                    <label>Kecamatan</label>
+                    <Dropdown className="pb-3">
+                    <DropdownToggle className=" w-full text-left">
+                        Pilih lokasi...
+                      </DropdownToggle>
+                      <DropdownMenu>
+
+                      </DropdownMenu>
+                    </Dropdown>
+
+                    <label>Kelurahan</label>
+                    <Dropdown className="pb-3">
+                    <DropdownToggle className=" w-full text-left">
+                        Pilih lokasi...
+                      </DropdownToggle>
+                      <DropdownMenu>
+
+                      </DropdownMenu>
+                    </Dropdown>
+                  </div>
                 </div>
+                <button className=" bg-red-500 w-full h-[30px] rounded-md">Simpan</button>
+                
               </form>
             </div>
         </div>
