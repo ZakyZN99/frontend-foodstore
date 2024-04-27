@@ -29,7 +29,7 @@ export const Address = () => {
                 <div className="pt-2">
                   <button className=" bg-red-600 text-black pl-[10px] pr-[10px] pt-1 pb-1 rounded-md font-medium">Tambah Alamat</button>
                 </div>
-               <div>
+                <div>
                     <table className="w-full border-collapse">
                         <thead>
                             <tr>
